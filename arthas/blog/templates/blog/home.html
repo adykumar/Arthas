@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% if title %}
+      <title>Django Blog - {{ title }}</title>
+    {% else %}
+      <title>Django Blog</title>
+    {% endif %}
+  </head>
+  <body>
+    {% for post in posts %}
+      <h1>{{ post.Book }}</h1>
+      <p>By {{ post.Author }}</p>
+      <p>Type- {{ post.Genre }}</p>
+    {% endfor %}
+  </body>
+</html>
